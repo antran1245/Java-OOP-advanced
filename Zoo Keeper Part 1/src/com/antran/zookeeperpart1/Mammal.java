@@ -1,7 +1,7 @@
 package com.antran.zookeeperpart1;
 
 public class Mammal {
-	public int energyLevel;
+	protected int energyLevel;
 
 	/**
 	 * @param energyLevel
@@ -13,6 +13,14 @@ public class Mammal {
 	public int displayEnergy() {
 		System.out.println(energyLevel);
 		return energyLevel;
+	}
+
+	public int getEnergyLevel() {
+		return energyLevel;
+	}
+
+	public void setEnergyLevel(int energyLevel) {
+		this.energyLevel = energyLevel;
 	}
 	
 }
